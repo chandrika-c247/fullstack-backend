@@ -1,0 +1,43 @@
+{
+    "jsc": {
+        "parser": {
+            "syntax": "typescript",
+            "tsx": false,
+            "dynamicImport": true,
+            "decorators": true
+        },
+        "transform": {
+            "legacyDecorator": true,
+            "decoratorMetadata": true
+        },
+        "target": "es2017",
+        "externalHelpers": false,
+        "keepClassNames": true,
+        "loose": false,
+        "minify": {
+            "compress": {
+                "unused": true
+            },
+            "mangle": true
+        },
+        "baseUrl": "app",
+        "paths": {
+            "@/*": ["*"],
+            "@common/*": ["common/*"],
+            "@config/*": ["config/*"],
+            "@controllers/*": ["controllers/*"],
+            "@factories/*": ["factories/*"],
+            "@managers/*": ["managers/*"],
+            "@middlewares/*": ["middlewares/*"],
+            "@models/*": ["models/*"],
+            "@routes/*": ["routes/*"],
+            "@services/*": ["services/*"],
+            "@statics/*": ["statics/*"],
+            "@utils/*": ["utils/*"]
+        }
+    },
+    "minify": true,
+    "module": {
+        "type": "commonjs"
+    }
+}

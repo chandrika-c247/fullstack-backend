@@ -1,0 +1,11 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true,
+        "addMissingImports": true
+    },
+    "editor.formatOnSave": true,
+    "[yaml]": {
+        "editor.formatOnSave": false
+    }
+}

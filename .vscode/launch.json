@@ -1,0 +1,36 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}",
+            "request": "attach",
+            "skipFiles": ["<node_internals>/**"],
+            "type": "pwa-node"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Start API",
+            "command": "npm run start"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Test API",
+            "command": "npm run test"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Lint API",
+            "command": "npm run lint"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Lint:Fix API",
+            "command": "npm run lint:fix"
+        }
+    ]
+}
